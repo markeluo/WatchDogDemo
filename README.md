@@ -458,7 +458,8 @@ public class Log
 processName字段表示看护程序，不是被看护程序，如果写反了，嗯...(你可以试下效果)
 Arguments参数是被看护程序的完整路径，因为一般情况下，是由被看护程序启动看护程序，所以我们可以直接使用Process.GetCurrentProcess().MainModule.FileName获取到被看护程序的完整路径
 5、在主程序入口点启动看门狗
-public partial class App : Application
+
+    public partial class App : Application
     {
         [STAThread]
         static void Main()
