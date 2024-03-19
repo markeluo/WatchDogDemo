@@ -413,8 +413,8 @@ public class Log
 至此，看护程序已经搞定。接着在主程序（被看护程序）封装一个启停类
 
 4、主程序封装看门狗启停类
-
- public static class WatchDog
+    
+     public static class WatchDog
     {
         private static string processName = "WatchDog";  //看护程序进程名（注意这里不是被看护程序名，你可以试一下换成主程序名字会使什么效果）
         private static string appPath = AppDomain.CurrentDomain.BaseDirectory;	//系统启动目录
@@ -440,7 +440,6 @@ public class Log
             {
             }
         }
-
         /// <summary>
         /// 停用看门狗
         /// </summary>
